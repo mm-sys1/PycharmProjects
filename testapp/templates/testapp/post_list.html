@@ -1,0 +1,16 @@
+{% extends 'testapp/base.html' %}
+{% block content %}
+
+        {% for post in bala %}
+
+            <div class="post">
+                <p>publisched: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr}}</p>
+            </div>
+
+        {% endfor %}
+
+
+
+{% endblock %}

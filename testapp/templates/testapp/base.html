@@ -1,0 +1,26 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <title>Django FAQ</title>
+        </head><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/testapp.css' %}">
+<body>
+          <div class="logo">
+                <h1><a href="/">Django FAQ</a></h1>
+
+            </div>
+
+    <div class="">
+
+            <div class="post">
+            {% block content %}
+            {% endblock %}
+            </div>
+
+    </div>
+<div class="footer"><strong>Footer</strong></div>
+</body>
+
+</html>
